@@ -43,7 +43,7 @@ private:
 
 private:
 	const Loop &_loop;
-	std::atomic<bool> _isConnected;
+	bool _isConnected;
 };
 
 } /* namespace translib */

@@ -15,7 +15,8 @@
         "\\.vscode",
         "\\.git",
         "\\.DS_Store",
-        "\\build"
+        "\\build",
+        "\\lib"
     ],
     "generatedFiles": {
         "uploadOnSave": false,

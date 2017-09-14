@@ -36,12 +36,18 @@ class TimerManager
 		}
 		audit_timer = NULL;
 	}
-	bool init();
+	static TimerManager* instance()
+	{
+		static TimerManager* ins = new TimerManager();
+		return ins;
+	}
+
 	Timer::ptr_p getTimer(int *timerID = NULL);
 	bool killTimer(int timerID);
 
   protected:
   private:
+	bool init();
 	int getUniqueID()
 	{
 		return (uniqueID_atomic++);
